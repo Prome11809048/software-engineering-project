@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            position: relative;
+            margin: 40px;
+            text-align: center;
+        }
+        .table-box {
+            margin: 50px auto;
+        }
+
+        .table-row {
+            display: table;
+            width: 70%;
+            margin: 10px auto;
+            font-family: sans-serif;
+            background: transparent;
+            padding: 12px 0;
+            color: #555;
+            font-size: 13px;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+        }
+
+        .table-cell {
+            display: table-cell;
+            width: 25%;
+            text-align: center;
+            padding: 4px 0;
+            border-right: 1px solid #d6d4d4;
+            vertical-align: middle;
+        }
+
+        .table-head {
+            background: rgba(71, 185, 185, 0.924);
+            box-shadow: none;
+            color: white;
+            font-size: 600;
+        }
+
+        .table-head .table-cell {
+            border-right: none;
+        }
+
+        .last-cell {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Phone Numbers</h1>
+    <div class="table-box">
+        <div class="table-row table-head">
+            <div class="table-cell">
+                <p>Student ID</p>
+            </div>
+            <div class="table-cell">
+                <p>Student Name</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Phone Number</p>
+            </div>
+
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809001</p>
+            </div>
+            <div class="table-cell">
+                <p>Md.Zamiul Hossain Dorpon</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01713548642</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809002</p>
+            </div>
+            <div class="table-cell">
+                <p>Sibgatulla</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01628797954</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809003</p>
+            </div>
+            <div class="table-cell">
+                <p>Tanvir Hossen Shanto</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01832892309</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809004</p>
+            </div>
+            <div class="table-cell">
+                <p>Airin Akter Akhi</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknwon</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809005</p>
+            </div>
+            <div class="table-cell">
+                <p>Najmul Islam Nayeem</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01830671247</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809006</p>
+            </div>
+            <div class="table-cell">
+                <p>Rifatun Nesa Pitu</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01731994675</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809007</p>
+            </div>
+            <div class="table-cell">
+                <p>Sumaia akter nipa</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01601918018</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809008</p>
+            </div>
+            <div class="table-cell">
+                <p>Tanjina</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809009</p>
+            </div>
+            <div class="table-cell">
+                <p>Hridoy Chandra Das</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01746476121</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809010</p>
+            </div>
+            <div class="table-cell">
+                <p>Md Rifat E Noor</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01533955498</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809011</p>
+            </div>
+            <div class="table-cell">
+                <p>Md Ifranul Hoque</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01876317407</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809012</p>
+            </div>
+            <div class="table-cell">
+                <p>Md Tareq Rahman </p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01647167142</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809013</p>
+            </div>
+            <div class="table-cell">
+                <p>kamrun nahar rimi</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01752420168</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809014</p>
+            </div>
+            <div class="table-cell">
+                <p>Farhad Ahamed </p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01831180274</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809015</p>
+            </div>
+            <div class="table-cell">
+                <p>Samarjit Saha</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>+880 1625-291555</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809016</p>
+            </div>
+            <div class="table-cell">
+                <p>Mumthahina Khondaker </p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01836479660</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809017</p>
+            </div>
+            <div class="table-cell">
+                <p>Inzamam-ul-Haque</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01821982982</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809018</p>
+            </div>
+            <div class="table-cell">
+                <p>Anik Chakrabarty</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01761951604</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809019</p>
+            </div>
+            <div class="table-cell">
+                <p>Md.Akib Hasan</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01521230997</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809020</p>
+            </div>
+            <div class="table-cell">
+                <p>Tohidul Islam</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01868794440</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809021</p>
+            </div>
+            <div class="table-cell">
+                <p>Md.Armanul Haq</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809022</p>
+            </div>
+            <div class="table-cell">
+                <p>Tanima Sultana</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01957821518</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809023</p>
+            </div>
+            <div class="table-cell">
+                <p>Afsar-Al-Tahibi</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknwon</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809024</p>
+            </div>
+            <div class="table-cell">
+                <p>Sadia Afrin Zarin</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01911576120</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809025</p>
+            </div>
+            <div class="table-cell">
+                <p>Foujia Islam</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01736810248</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809026</p>
+            </div>
+            <div class="table-cell">
+                <p>Nusrat Jahan Abrar</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01868350865</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809027</p>
+            </div>
+            <div class="table-cell">
+                <p>Tanvir Sakil</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809028</p>
+            </div>
+            <div class="table-cell">
+                <p>Any Chowdhory</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01971629182</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809029</p>
+            </div>
+            <div class="table-cell">
+                <p>Abu-Rayhan</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01760664352</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809030</p>
+            </div>
+            <div class="table-cell">
+                <p>sihab</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809031</p>
+            </div>
+            <div class="table-cell">
+                <p>Rakiba akter</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01645122115</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809032</p>
+            </div>
+            <div class="table-cell">
+                <p>Md.Ashraful Alam Utsho</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809033</p>
+            </div>
+            <div class="table-cell">
+                <p>Kohinoor akter</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01871385101</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809034</p>
+            </div>
+            <div class="table-cell">
+                <p>Md.Omar Faruk</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01684850577</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809035</p>
+            </div>
+            <div class="table-cell">
+                <p>Arpita Saha</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01875469489</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809036</p>
+            </div>
+            <div class="table-cell">
+                <p>Rejwan ahmed</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01991233536</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809037</p>
+            </div>
+            <div class="table-cell">
+                <p>Sohana Nowar</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01821218814</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809038</p>
+            </div>
+            <div class="table-cell">
+                <p>Salma Akter</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01780349796</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809039</p>
+            </div>
+            <div class="table-cell">
+                <p>Priyosree Sana</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01316729987</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809041</p>
+            </div>
+            <div class="table-cell">
+                <p>Jabin Tasnim Niloy</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Uknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809042</p>
+            </div>
+            <div class="table-cell">
+                <p>Shiplu ahmed</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01755844449</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809044</p>
+            </div>
+            <div class="table-cell">
+                <p>Sajib Sarkar</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809045</p>
+            </div>
+            <div class="table-cell">
+                <p>Abdul-Al-Sadik</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Unknown</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809046</p>
+            </div>
+            <div class="table-cell">
+                <p>kurshed alam</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01310023792</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809047</p>
+            </div>
+            <div class="table-cell">
+                <p>Md-Rashedul-Hasan</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>+880 1521-526425</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809048</p>
+            </div>
+            <div class="table-cell">
+                <p>Prome Saha Resha</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01784710363</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809049</p>
+            </div>
+            <div class="table-cell">
+                <p>Iftekhar Fahim</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01869-812953</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809050</p>
+            </div>
+            <div class="table-cell">
+                <p>Akther hossen</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01764413981</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11809051</p>
+            </div>
+            <div class="table-cell">
+                <p>Nurul-Afsar-Arif</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01837770613</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>11709030</p>
+            </div>
+            <div class="table-cell">
+                <p>Fazilater Nessa Afrin</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>01751606555</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

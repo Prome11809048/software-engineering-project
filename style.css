@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/First_img.jpg);
+    background-color:red;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h2{
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: intro 6s steps(30) infinite alternate;
+    border-right: 3px solid white;
+    font-size: 30px;
+}
+@keyframes intro{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 30ch;
+    }
+}
+nav{
+    background: #1b1b1b;
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav .nav-links{
+    float: left;
+    color: white;
+    padding: 1% 6%;
+
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 16px;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+    cursor: pointer;
+                
+}
+nav ul ul ul li:hover{
+    box-shadow: none;
+    color: cyan;
+    cursor: pointer;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .04s;
+}
+nav ul li:hover > ul{
+    top:70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    text-align: left;
+
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.fa-plus{
+    margin: 15px;
+    font-size: 15px;
+}
+.show,input{
+    display: none;
+}
+.show,.icon,input{
+    display:none ;
+
+}
+@media all and (max-width: 968px){
+    nav ul{
+        margin-right: 0px;
+        float: left;
+    }
+    nav .nav-links{
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li,nav ul ul li{
+        display: block;
+        width: 100%;
+
+    }
+    nav ul ul{
+        top:70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul ul li{
+        position: static;
+    }
+    nav ul ul li{
+        border-bottom: 0px;
+    }
+    nav ul ul a{
+        padding-left: 40px;
+
+    }
+    nav ul ul ul a{
+        padding-left: 80px;
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 16px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: cyan;
+    }
+    .icon{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+    .show + a, ul{
+        display: none;
+
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+    
+}
+
+.text-box{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* .text-box p{
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: white;
+} */
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 35px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    translate: 1s;
+}
+/* ---------footer------------ */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #f44336;
+}
+.icons .fab{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    justify-content: center;
+    padding: 18px 0;
+}
+.icons .fas{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+a i{
+    transition: all 0.3s linear;
+}
+a:hover i{
+    transform: scale(1.4);
+}

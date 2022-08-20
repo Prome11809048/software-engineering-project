@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT - incourse marks</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    h2{
+        margin-top: 20px;
+    }
+    table{
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 270px;
+        width: 70%;
+    }
+    th{
+        background:rgba(71, 185, 185, 0.924);;
+        color: white;
+        padding: 10px;
+        border: 2px rgba(71, 185, 185, 0.924) solid;
+    }
+    td{
+        padding: 10px;
+        border: 2px rgba(71, 185, 185, 0.924) solid;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="marks_incourse">
+            <h2>ICT 601 - Digital Signal Processing</h2>
+            <h3>Incource Marks</h3>
+            <table id="mytable" border="1">
+                <thead>
+                    <th>Id</th>
+                    <th>Mid</th>
+                    <th>Presentation</th>
+                    <th>Assignment</th>
+                    <th>Attedance</th>
+                    <th>Total</th>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const table = document.getElementById('mytable')
+        const tbody = table.querySelector('.tbody')
+        async function init() {
+            const res = await fetch('http://localhost:3000/incourse?course_id=ict601')
+            const data = await res.json();
+            console.log(data);
+            const td = document.createElement('td');
+            data[0].marks.forEach(mark => {
+                const tr = document.createElement('tr')
+                tr.innerHTML = `<td>${mark.id}</td>
+                    <td>${mark.mid}</td>
+                    <td>${mark.presentation}</td>
+                    <td>${mark.assignment}</td>
+                    <td>${mark.attedance}</td>
+                    <td>${mark.total}</td>
+            `
+
+                tbody.append(tr)
+            });
+        }
+        init();
+
+    </script>
+</body>
+
+</html>
